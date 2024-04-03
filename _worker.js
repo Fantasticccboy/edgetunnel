@@ -95,6 +95,8 @@ export default {
 						});
 					}
 				}
+				case '/a':
+					return new Response(JSON.stringify(request.cf), { status: 200 });	
 				default:
 					return new Response('Not found', { status: 404 });
 				}
